@@ -16,10 +16,10 @@ This approach not only eliminates the need for manual upkeep of rules when wich 
 
 # Technical Implementation
 
-##1. Identify Attributes
+## 1. Identify Attributes
  We need a way to identify all attribute we want to use the dynamic faceting on, the easiest is to use a naming convention e.g. all attribute which should be considered could start with a certain prefix like “df” df_powerconsumption_int.  Alternatively the list of all field-nams could be maintained in a property, this might give more flexibility but also adding the work of maintaining the list of attributes.
 
-##2. Introduce Helper-Field on Solr-Document
+## 2. Introduce Helper-Field on Solr-Document
 We introduce a helper field on each Solr document, in which we store a list of all attributes of this document, which we use for the dynamic attributes. Let’s call this helper field dynamic_facet_fields_string_mv, it is mult-value since we want to hold a list of a fields for the dynamic facetting.
 
 ```
