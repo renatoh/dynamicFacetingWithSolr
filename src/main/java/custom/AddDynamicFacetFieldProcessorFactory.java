@@ -28,7 +28,7 @@ import static custom.CommonParams.FACET_FIELD_NAME;
  * 	 ]
  * 	 This field is then used in AddDynamicFacetsSearchComponent.
  */
-public class AddPimWebUseFieldListProcessorFactory extends UpdateRequestProcessorFactory
+public class AddDynamicFacetFieldProcessorFactory extends UpdateRequestProcessorFactory
 {
 	public static final String PIM_WEB_USE_PREFIX = "df_";
 
