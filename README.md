@@ -22,8 +22,19 @@ This approach not only eliminates the need for manual upkeep of rules when wich 
 ## 2. Introduce Helper-Field on Solr-Document
 We introduce a helper field on each Solr document, in which we store a list of all attributes of this document, which we use for the dynamic attributes. Let’s call this helper field dynamic_facet_fields_string_mv, it is mult-value since we want to hold a list of a fields for the dynamic facetting.
 
+So we take a document which looks like this:
+
 ```
-dynamic_faceting_string_mv:[df_brand_string, df_length_double, df_color_string, df_category_string]
+{
+  "code_string": 123,
+  "price_double": 123.45,
+  "df_maxpowerconsumption_int": 200,
+  "df_minpowerconsumption_int": 5,
+  "df_weight_double": 1560
+}
+```
+..and add the field dynamic_facet_fields_string_mv to it:
+```
 {
   "code_string": 123,
   "price_double": 123.45,
@@ -37,6 +48,25 @@ dynamic_faceting_string_mv:[df_brand_string, df_length_double, df_color_string, 
   ]
 }
 ```
+This happens within Solr using a UpdateRequestProcessorFactory, here the implemenation:
+[AddDynamicFacetFieldProcessorFactory.java](https://github.com/renatoh/dynamicFacetingWithSolr/blob/main/src/main/java/custom/AddDynamicFacetFieldProcessorFactory.java)
+
+## 3. Do Sub-Query to Determine Fields for Faceting
+The third and last step, is to run a sub-query for each search for wich we want to use the dynamics facets. This sub-query does not fetch any documetns, the only thing it does is to facet on the helper-field dynamic_faceting_string_mv, the counts on the helper-field dynamic_faceting_string_mv will tell us, how frequently which attribute is present in the search result. Let me illustrate this with another exmaple:
+
+
+In this snipped from a response of the sub-query, we see that in total the sub-query returns 328 documents. This count is the same as for the main-query since we do apply the same filters. From the facet counts on the facet for the field dynamic_facet_fields_string_mv, we can now calculated coverate....
+```
+response":{"numFound":328,"start":0,"numFoundExact":true,"docs
+
+  "facet_fields":{
+      "dynamic_facet_fields_string_mv":[
+        "df_weight_double",203,
+        "df_maxpowerconsumption_int",45,
+        "df_minpowerconsumption_int",45
+        ]}
+``` 
+
 
 # Build Instructions
 
