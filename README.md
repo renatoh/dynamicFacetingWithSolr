@@ -55,7 +55,7 @@ This happens within Solr using a UpdateRequestProcessorFactory, here the impleme
 The third and last step, is to run a sub-query for each search for wich we want to use the dynamics facets. This sub-query does not fetch any documetns, the only thing it does is to facet on the helper-field dynamic_faceting_string_mv, the counts on the helper-field dynamic_faceting_string_mv will tell us, how frequently which attribute is present in the search result. Let me illustrate this with another exmaple:
 
 
-In this snipped from a response of the sub-query, we see that in total the sub-query returns 328 documents. This count is the same as for the main-query since we do apply the same filters. From the facet counts on the facet for the field dynamic_facet_fields_string_mv, we can now calculated coverate....
+In this snipped from a response of the sub-query, we see that in total the sub-query returns 328 documents. This count is the same as for the main-query since we do apply the same filters. From the facet counts on the facet for the field dynamic_facet_fields_string_mv, we can now calculated coverate of each field within the search result, e.g. df_weight_double has a high coverage 0.618 (203/328), the other two fields df_maxpowerconsumption_int and df_maxpowerconsumption_int have a low coverage 0.137(45/328)
 ```
 response":{"numFound":328,"start":0,"numFoundExact":true,"docs
 
@@ -66,7 +66,15 @@ response":{"numFound":328,"start":0,"numFoundExact":true,"docs
         "df_minpowerconsumption_int",45
         ]}
 ``` 
+We take now all the facet-names with coverage above a threshold e.g. 0.3 and add these as facet to the main query. In our example we would only ad facet.field=df_weight_double to it.
+This is done by implementing an onw SearchComponent:
 
+[AddDynamicFacetsSearchComponent.java](https://github.com/renatoh/dynamicFacetingWithSolr/blob/main/src/main/java/custom/AddDynamicFacetsSearchComponent.java)
+
+## 4. Configuring Solr
+The only thing left is now to back these two classes to a jar, deploy it to Solr, and to register the custom UpdateRequestProcessorFactory and SearchComponent in the solrconfig.xml
+
+[solrconfig.xml](https://github.com/renatoh/dynamicFacetingWithSolr/blob/main/resources/solrconfig.xml)
 
 # Build Instructions
 
