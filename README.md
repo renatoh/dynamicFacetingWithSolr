@@ -1,11 +1,11 @@
 # Business Case 
 
-A precise product search and the capability of refining the search results using facets is an integral part of any online shops.
-Facet are often used across hundreds of different attributes, but it is not efficient and sometimes simply impossible to calculated all the facets for each and every search.
+A precise product search and the capability to refine search results using facets are integral parts of any online shop.
+Facets are often used across hundreds of different attributes, but it is not efficient and sometimes simply impossible to calculate all the facets for each and every search.
 
-Often the solution the solution to this problem is to maintain facets manually on the category tree. The facet which are valid across all the products such as such as price, categories- brands, etc. are maintained on the root-category, facets for very specific sets of products are then configured further down in the category tree. 
+Often, the solution to this problem is to manually maintain facets on the category tree. Facets that are valid across all products, such as price, categories, brands, etc., are maintained at the root category level, while facets for specific sets of products are configured further down the category tree.
 
-This is not only labour-some to maintain, it also does not work very well for full-text searches where no category has been selected in advanced. Such a search returns results across a wide range of different products. For example a  search  for “usb cable” (without the double quotes) on an electronics stores will return results across very different type of products leading to very messy facets. 
+This is not only laborious to maintain, but it also does not work very well for full-text searches where no category has been selected in advance. Such a search returns results across a wide range of different products. For example, a search for “usb cable” (without the double quotes) on an electronics store will return results across very different types of products, leading to very messy facets. 
 
 Wouldn't it be nice if the facet which are applied to a search were bespoke to each individual search and not depending on any static context such as the category I am searching in?
 If an attribute is precent on a high percentage of the product in the search, we want to use it as a facet, if an attribute is sparse, we do not use it as a facet.
