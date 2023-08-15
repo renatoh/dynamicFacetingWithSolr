@@ -3,9 +3,9 @@
 A precise product search and the capability to refine search results using facets are integral parts of any online shop.
 Facets are often used across hundreds of different attributes, but it is not efficient and sometimes simply impossible to calculate all the facets for each and every search.
 
-Often, the solution to this problem is to manually maintain facets on the category tree. Facets that are valid across all products, such as price, categories, brands, etc., are maintained at the root category level, while facets for specific sets of products are configured further down the category tree.
+Often, the solution to this problem is to manually maintain facets on the category tree. Facets that are valid across all products, such as price, categories, brands, etc., are maintained at the root category level, while facets for products of a specific category are configured further down the category tree.
 
-This is not only laborious to maintain, but it also does not work very well for full-text searches where no category has been selected in advance. Such a search returns results across a wide range of different products. For example, a search for “usb cable” (without the double quotes) on an electronics store will return results across very different types of products, leading to very messy facets. 
+This is not only tedious to maintain, but it also does not work very well for full-text searches where no category has been selected in advance. Such a search returns results across a wide range of different products. For example, a search for “usb cable” (without the double quotes) on an electronics store will return results across very different types of products, leading to very messy facets. 
 
 Wouldn't it be nice if the facets applied to a search were tailored to each individual search, rather than relying on any static context such as the category I am searching within? If an attribute is present in a high percentage of the products within the search, we would want to use it as a facet, if an attribute is sparse, we would not use it as a facet.
 
