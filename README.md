@@ -9,7 +9,7 @@ This is not only tedious to maintain, but it also does not work very well for fu
 
 Wouldn't it be nice if the facets applied to a search were tailored to each individual search, rather than relying on any static context such as the category I am searching within? If an attribute is present in a high percentage of the products within the search, we would want to use it as a facet, if an attribute is sparse, we would not use it as a facet.
 
-This approach not only eliminates the need for manual upkeep of rules when wich facet is applied, it also ensures that only facets relevant to each individual search are calculated and displayed.
+This approach not only eliminates the need for manual upkeep of rules when which facet is applied, it also ensures that only facets relevant to each individual search are calculated and displayed.
 
 # Technical Implementation
 
