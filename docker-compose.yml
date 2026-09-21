@@ -1,0 +1,29 @@
+services:
+  solr:
+    image: solr:9.10.1
+    ports:
+      - "8983:8983"
+      - "5005:5005"
+    environment:
+      - SOLR_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -Dsolr.config.lib.enabled=true
+    volumes:
+      - ./build/libs/dynamic-facetting.jar:/opt/solr/server/solr/lib/dynamic-facetting.jar
+      - ./resources/solrconfig.xml:/opt/solr/server/solr/configsets/_default/conf/solrconfig.xml:ro
+    command: solr-precreate dynamic-facetting
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8983/solr/dynamic-facetting/admin/ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  solr-init:
+    image: curlimages/curl
+    depends_on:
+      solr:
+        condition: service_healthy
+    volumes:
+      - ./resources/test-data.json:/test-data.json
+    command: >
+      curl -X POST 'http://solr:8983/solr/dynamic-facetting/update?commit=true'
+      -H 'Content-Type: application/json'
+      --data-binary @/test-data.json

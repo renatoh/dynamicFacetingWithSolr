@@ -1,0 +1,610 @@
+[
+  {
+    "id": "cable-001",
+    "name_t": "USB-C Cable 0.5m",
+    "df_length_i": 50,
+    "df_weight_d": 20,
+    "df_max_current_d": 3.0
+  },
+  {
+    "id": "cable-002",
+    "name_t": "USB-C Cable 1m",
+    "df_length_i": 100,
+    "df_weight_d": 30,
+    "df_max_current_d": 3.0
+  },
+  {
+    "id": "cable-003",
+    "name_t": "USB-C Cable 2m",
+    "df_length_i": 200,
+    "df_weight_d": 55,
+    "df_max_current_d": 3.0
+  },
+  {
+    "id": "cable-004",
+    "name_t": "USB-C Cable 3m",
+    "df_length_i": 300,
+    "df_weight_d": 80,
+    "df_max_current_d": 3.0
+  },
+  {
+    "id": "cable-005",
+    "name_t": "USB-C Cable 5m",
+    "df_length_i": 500,
+    "df_weight_d": 120,
+    "df_max_current_d": 3.0
+  },
+  {
+    "id": "cable-006",
+    "name_t": "USB-C PD Cable 1m",
+    "df_length_i": 100,
+    "df_weight_d": 35,
+    "df_max_current_d": 5.0
+  },
+  {
+    "id": "cable-007",
+    "name_t": "USB-C PD Cable 2m",
+    "df_length_i": 200,
+    "df_weight_d": 60,
+    "df_max_current_d": 5.0
+  },
+  {
+    "id": "cable-008",
+    "name_t": "USB-C Braided Cable 1m",
+    "df_length_i": 100,
+    "df_weight_d": 42,
+    "df_max_current_d": 5.0
+  },
+  {
+    "id": "cable-009",
+    "name_t": "USB-C Braided Cable 2m",
+    "df_length_i": 200,
+    "df_weight_d": 68,
+    "df_max_current_d": 5.0
+  },
+  {
+    "id": "cable-010",
+    "name_t": "USB-C Braided Cable 3m",
+    "df_length_i": 300,
+    "df_weight_d": 95,
+    "df_max_current_d": 5.0
+  },
+  {
+    "id": "cable-011",
+    "name_t": "Micro USB Cable 0.5m",
+    "df_length_i": 50,
+    "df_weight_d": 18,
+    "df_max_current_d": 2.0
+  },
+  {
+    "id": "cable-012",
+    "name_t": "Micro USB Cable 1m",
+    "df_length_i": 100,
+    "df_weight_d": 25,
+    "df_max_current_d": 2.0
+  },
+  {
+    "id": "cable-013",
+    "name_t": "Micro USB Cable 2m",
+    "df_length_i": 200,
+    "df_weight_d": 45,
+    "df_max_current_d": 2.0
+  },
+  {
+    "id": "cable-014",
+    "name_t": "Lightning Cable 0.5m",
+    "df_length_i": 50,
+    "df_weight_d": 20,
+    "df_max_current_d": 2.4
+  },
+  {
+    "id": "cable-015",
+    "name_t": "Lightning Cable 1m",
+    "df_length_i": 100,
+    "df_weight_d": 28,
+    "df_max_current_d": 2.4
+  },
+  {
+    "id": "cable-016",
+    "name_t": "Lightning Cable 2m",
+    "df_length_i": 200,
+    "df_weight_d": 50,
+    "df_max_current_d": 2.4
+  },
+  {
+    "id": "cable-017",
+    "name_t": "HDMI Cable 1m",
+    "df_length_i": 100,
+    "df_weight_d": 100
+  },
+  {
+    "id": "cable-018",
+    "name_t": "HDMI Cable 2m",
+    "df_length_i": 200,
+    "df_weight_d": 180
+  },
+  {
+    "id": "cable-019",
+    "name_t": "HDMI Cable 3m",
+    "df_length_i": 300,
+    "df_weight_d": 260
+  },
+  {
+    "id": "cable-020",
+    "name_t": "HDMI Cable 5m",
+    "df_length_i": 500,
+    "df_weight_d": 420
+  },
+  {
+    "id": "cable-021",
+    "name_t": "DisplayPort Cable 1m",
+    "df_length_i": 100,
+    "df_weight_d": 110
+  },
+  {
+    "id": "cable-022",
+    "name_t": "DisplayPort Cable 2m",
+    "df_length_i": 200,
+    "df_weight_d": 195
+  },
+  {
+    "id": "cable-023",
+    "name_t": "Ethernet Cable Cat6 1m",
+    "df_length_i": 100,
+    "df_weight_d": 60
+  },
+  {
+    "id": "cable-024",
+    "name_t": "Ethernet Cable Cat6 3m",
+    "df_length_i": 300,
+    "df_weight_d": 155
+  },
+  {
+    "id": "cable-025",
+    "name_t": "Ethernet Cable Cat6 5m",
+    "df_length_i": 500,
+    "df_weight_d": 245
+  },
+  {
+    "id": "cable-026",
+    "name_t": "Ethernet Cable Cat7 1m",
+    "df_length_i": 100,
+    "df_weight_d": 75
+  },
+  {
+    "id": "cable-027",
+    "name_t": "Ethernet Cable Cat7 3m",
+    "df_length_i": 300,
+    "df_weight_d": 185
+  },
+  {
+    "id": "cable-028",
+    "name_t": "3.5mm Audio Cable 1m",
+    "df_length_i": 100,
+    "df_weight_d": 22
+  },
+  {
+    "id": "cable-029",
+    "name_t": "3.5mm Audio Cable 2m",
+    "df_length_i": 200,
+    "df_weight_d": 38
+  },
+  {
+    "id": "cable-030",
+    "name_t": "Optical Audio Cable 2m",
+    "df_length_i": 200,
+    "df_weight_d": 55
+  },
+  {
+    "id": "charger-001",
+    "name_t": "USB-C Charger 20W",
+    "df_max_power_i": 20,
+    "df_weight_d": 65,
+    "df_ports_i": 1
+  },
+  {
+    "id": "charger-002",
+    "name_t": "USB-C Charger 30W",
+    "df_max_power_i": 30,
+    "df_weight_d": 72,
+    "df_ports_i": 1
+  },
+  {
+    "id": "charger-003",
+    "name_t": "USB-C Charger 45W",
+    "df_max_power_i": 45,
+    "df_weight_d": 88,
+    "df_ports_i": 1
+  },
+  {
+    "id": "charger-004",
+    "name_t": "USB-C Charger 65W",
+    "df_max_power_i": 65,
+    "df_weight_d": 110,
+    "df_ports_i": 1
+  },
+  {
+    "id": "charger-005",
+    "name_t": "USB-C Charger 100W",
+    "df_max_power_i": 100,
+    "df_weight_d": 145,
+    "df_ports_i": 1
+  },
+  {
+    "id": "charger-006",
+    "name_t": "Dual USB-C Charger 45W",
+    "df_max_power_i": 45,
+    "df_weight_d": 95,
+    "df_ports_i": 2
+  },
+  {
+    "id": "charger-007",
+    "name_t": "Dual USB-C Charger 65W",
+    "df_max_power_i": 65,
+    "df_weight_d": 120,
+    "df_ports_i": 2
+  },
+  {
+    "id": "charger-008",
+    "name_t": "4-Port Charger 75W",
+    "df_max_power_i": 75,
+    "df_weight_d": 160,
+    "df_ports_i": 4
+  },
+  {
+    "id": "charger-009",
+    "name_t": "GaN Charger 65W",
+    "df_max_power_i": 65,
+    "df_weight_d": 82,
+    "df_ports_i": 2
+  },
+  {
+    "id": "charger-010",
+    "name_t": "GaN Charger 100W",
+    "df_max_power_i": 100,
+    "df_weight_d": 98,
+    "df_ports_i": 3
+  },
+  {
+    "id": "charger-011",
+    "name_t": "Car Charger 20W",
+    "df_max_power_i": 20,
+    "df_weight_d": 35,
+    "df_ports_i": 1
+  },
+  {
+    "id": "charger-012",
+    "name_t": "Car Charger 36W",
+    "df_max_power_i": 36,
+    "df_weight_d": 42,
+    "df_ports_i": 2
+  },
+  {
+    "id": "charger-013",
+    "name_t": "Wireless Charger 10W",
+    "df_max_power_i": 10,
+    "df_weight_d": 70
+  },
+  {
+    "id": "charger-014",
+    "name_t": "Wireless Charger 15W",
+    "df_max_power_i": 15,
+    "df_weight_d": 85
+  },
+  {
+    "id": "charger-015",
+    "name_t": "MagSafe Charger 15W",
+    "df_max_power_i": 15,
+    "df_weight_d": 60
+  },
+  {
+    "id": "monitor-001",
+    "name_t": "Monitor 24 FHD 60Hz",
+    "df_size_i": 24,
+    "df_weight_d": 3800,
+    "df_refresh_rate_i": 60,
+    "df_resolution_s": "1920x1080",
+    "df_brightness_i": 250
+  },
+  {
+    "id": "monitor-002",
+    "name_t": "Monitor 24 FHD 144Hz",
+    "df_size_i": 24,
+    "df_weight_d": 4100,
+    "df_refresh_rate_i": 144,
+    "df_resolution_s": "1920x1080",
+    "df_brightness_i": 300
+  },
+  {
+    "id": "monitor-003",
+    "name_t": "Monitor 24 QHD 144Hz",
+    "df_size_i": 24,
+    "df_weight_d": 4400,
+    "df_refresh_rate_i": 144,
+    "df_resolution_s": "2560x1440",
+    "df_brightness_i": 350
+  },
+  {
+    "id": "monitor-004",
+    "name_t": "Monitor 27 FHD 60Hz",
+    "df_size_i": 27,
+    "df_weight_d": 4900,
+    "df_refresh_rate_i": 60,
+    "df_resolution_s": "1920x1080",
+    "df_brightness_i": 250
+  },
+  {
+    "id": "monitor-005",
+    "name_t": "Monitor 27 QHD 60Hz",
+    "df_size_i": 27,
+    "df_weight_d": 5200,
+    "df_refresh_rate_i": 60,
+    "df_resolution_s": "2560x1440",
+    "df_brightness_i": 300
+  },
+  {
+    "id": "monitor-006",
+    "name_t": "Monitor 27 QHD 144Hz",
+    "df_size_i": 27,
+    "df_weight_d": 5500,
+    "df_refresh_rate_i": 144,
+    "df_resolution_s": "2560x1440",
+    "df_brightness_i": 350
+  },
+  {
+    "id": "monitor-007",
+    "name_t": "Monitor 27 4K 60Hz",
+    "df_size_i": 27,
+    "df_weight_d": 5800,
+    "df_refresh_rate_i": 60,
+    "df_resolution_s": "3840x2160",
+    "df_brightness_i": 400
+  },
+  {
+    "id": "monitor-008",
+    "name_t": "Monitor 32 QHD 60Hz",
+    "df_size_i": 32,
+    "df_weight_d": 6800,
+    "df_refresh_rate_i": 60,
+    "df_resolution_s": "2560x1440",
+    "df_brightness_i": 300
+  },
+  {
+    "id": "monitor-009",
+    "name_t": "Monitor 32 4K 60Hz",
+    "df_size_i": 32,
+    "df_weight_d": 7200,
+    "df_refresh_rate_i": 60,
+    "df_resolution_s": "3840x2160",
+    "df_brightness_i": 400
+  },
+  {
+    "id": "monitor-010",
+    "name_t": "Monitor 34 Ultrawide",
+    "df_size_i": 34,
+    "df_weight_d": 7900,
+    "df_refresh_rate_i": 100,
+    "df_resolution_s": "3440x1440",
+    "df_brightness_i": 350
+  },
+  {
+    "id": "keyboard-001",
+    "name_t": "Mechanical KB TKL Red",
+    "df_weight_d": 680,
+    "df_keys_i": 87,
+    "df_switch_type_s": "linear",
+    "df_backlit_s": "rgb"
+  },
+  {
+    "id": "keyboard-002",
+    "name_t": "Mechanical KB TKL Blue",
+    "df_weight_d": 690,
+    "df_keys_i": 87,
+    "df_switch_type_s": "clicky",
+    "df_backlit_s": "rgb"
+  },
+  {
+    "id": "keyboard-003",
+    "name_t": "Mechanical KB TKL Brown",
+    "df_weight_d": 685,
+    "df_keys_i": 87,
+    "df_switch_type_s": "tactile",
+    "df_backlit_s": "rgb"
+  },
+  {
+    "id": "keyboard-004",
+    "name_t": "Mechanical KB Full Red",
+    "df_weight_d": 980,
+    "df_keys_i": 104,
+    "df_switch_type_s": "linear",
+    "df_backlit_s": "rgb"
+  },
+  {
+    "id": "keyboard-005",
+    "name_t": "Mechanical KB Full Brown",
+    "df_weight_d": 990,
+    "df_keys_i": 104,
+    "df_switch_type_s": "tactile",
+    "df_backlit_s": "rgb"
+  },
+  {
+    "id": "keyboard-006",
+    "name_t": "Membrane KB Full",
+    "df_weight_d": 620,
+    "df_keys_i": 104,
+    "df_switch_type_s": "membrane",
+    "df_backlit_s": "none"
+  },
+  {
+    "id": "keyboard-007",
+    "name_t": "Wireless KB Compact",
+    "df_weight_d": 480,
+    "df_keys_i": 75,
+    "df_switch_type_s": "membrane",
+    "df_backlit_s": "none"
+  },
+  {
+    "id": "keyboard-008",
+    "name_t": "Low Profile KB TKL",
+    "df_weight_d": 520,
+    "df_keys_i": 87,
+    "df_switch_type_s": "linear",
+    "df_backlit_s": "white"
+  },
+  {
+    "id": "keyboard-009",
+    "name_t": "60% Mechanical KB Red",
+    "df_weight_d": 390,
+    "df_keys_i": 61,
+    "df_switch_type_s": "linear",
+    "df_backlit_s": "rgb"
+  },
+  {
+    "id": "keyboard-010",
+    "name_t": "60% Mechanical KB Brown",
+    "df_weight_d": 395,
+    "df_keys_i": 61,
+    "df_switch_type_s": "tactile",
+    "df_backlit_s": "rgb"
+  },
+  {
+    "id": "mouse-001",
+    "name_t": "Gaming Mouse 12000 DPI",
+    "df_weight_d": 95,
+    "df_dpi_i": 12000,
+    "df_buttons_i": 7
+  },
+  {
+    "id": "mouse-002",
+    "name_t": "Gaming Mouse 16000 DPI",
+    "df_weight_d": 88,
+    "df_dpi_i": 16000,
+    "df_buttons_i": 7
+  },
+  {
+    "id": "mouse-003",
+    "name_t": "Gaming Mouse 25600 DPI",
+    "df_weight_d": 80,
+    "df_dpi_i": 25600,
+    "df_buttons_i": 8
+  },
+  {
+    "id": "mouse-004",
+    "name_t": "Office Mouse Wireless",
+    "df_weight_d": 101,
+    "df_dpi_i": 4000,
+    "df_buttons_i": 5
+  },
+  {
+    "id": "mouse-005",
+    "name_t": "Office Mouse Wired",
+    "df_weight_d": 90,
+    "df_dpi_i": 2400,
+    "df_buttons_i": 3
+  },
+  {
+    "id": "mouse-006",
+    "name_t": "Ergonomic Mouse",
+    "df_weight_d": 135,
+    "df_dpi_i": 4000,
+    "df_buttons_i": 6
+  },
+  {
+    "id": "mouse-007",
+    "name_t": "Travel Mouse",
+    "df_weight_d": 60,
+    "df_dpi_i": 1600,
+    "df_buttons_i": 3
+  },
+  {
+    "id": "mouse-008",
+    "name_t": "Vertical Mouse",
+    "df_weight_d": 118,
+    "df_dpi_i": 2400,
+    "df_buttons_i": 5
+  },
+  {
+    "id": "mouse-009",
+    "name_t": "Trackball Mouse",
+    "df_weight_d": 145,
+    "df_dpi_i": 2000,
+    "df_buttons_i": 4
+  },
+  {
+    "id": "mouse-010",
+    "name_t": "Silent Mouse Wireless",
+    "df_weight_d": 85,
+    "df_dpi_i": 4000,
+    "df_buttons_i": 5
+  },
+  {
+    "id": "hub-001",
+    "name_t": "USB-C Hub 4-in-1",
+    "df_ports_i": 4,
+    "df_weight_d": 55,
+    "df_max_power_i": 60
+  },
+  {
+    "id": "hub-002",
+    "name_t": "USB-C Hub 7-in-1",
+    "df_ports_i": 7,
+    "df_weight_d": 95,
+    "df_max_power_i": 85
+  },
+  {
+    "id": "hub-003",
+    "name_t": "USB-C Hub 9-in-1",
+    "df_ports_i": 9,
+    "df_weight_d": 120,
+    "df_max_power_i": 100
+  },
+  {
+    "id": "hub-004",
+    "name_t": "USB-C Dock 12-in-1",
+    "df_ports_i": 12,
+    "df_weight_d": 310,
+    "df_max_power_i": 100
+  },
+  {
+    "id": "hub-005",
+    "name_t": "USB-A Hub 4-Port",
+    "df_ports_i": 4,
+    "df_weight_d": 65,
+    "df_max_power_i": 20
+  },
+  {
+    "id": "hub-006",
+    "name_t": "USB-A Hub 7-Port",
+    "df_ports_i": 7,
+    "df_weight_d": 110,
+    "df_max_power_i": 36
+  },
+  {
+    "id": "hub-007",
+    "name_t": "Thunderbolt Dock",
+    "df_ports_i": 11,
+    "df_weight_d": 285,
+    "df_max_power_i": 96
+  },
+  {
+    "id": "hub-008",
+    "name_t": "Travel Hub 5-in-1",
+    "df_ports_i": 5,
+    "df_weight_d": 48,
+    "df_max_power_i": 60
+  },
+  {
+    "id": "hub-009",
+    "name_t": "Desktop Hub 10-in-1",
+    "df_ports_i": 10,
+    "df_weight_d": 195,
+    "df_max_power_i": 100
+  },
+  {
+    "id": "hub-010",
+    "name_t": "USB-C Hub Slim 6-in-1",
+    "df_ports_i": 6,
+    "df_weight_d": 72,
+    "df_max_power_i": 85
+  }
+]
