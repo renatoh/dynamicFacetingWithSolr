@@ -30,7 +30,7 @@ import static custom.CommonParams.FACET_FIELD_NAME;
  */
 public class AddDynamicFacetFieldProcessorFactory extends UpdateRequestProcessorFactory
 {
-	public static final String PIM_WEB_USE_PREFIX = "df_";
+	public static final String DYNAMIC_FACET_FIELD_PREFIX = "df_";
 
 	public UpdateRequestProcessor getInstance(SolrQueryRequest req,
 											  SolrQueryResponse rsp,
@@ -44,7 +44,7 @@ public class AddDynamicFacetFieldProcessorFactory extends UpdateRequestProcessor
 				List<String> technicalAttribute = new ArrayList<>();
 				for (final String name : cmd.getSolrInputDocument().getFieldNames())
 				{                         	
-					if (name.contains(PIM_WEB_USE_PREFIX))
+					if (name.contains(DYNAMIC_FACET_FIELD_PREFIX))
 					{
 						technicalAttribute.add(name);
 						

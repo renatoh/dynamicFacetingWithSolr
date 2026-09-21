@@ -35,7 +35,6 @@
        that you fully re-index after changing this setting as it can
        affect both how text is indexed and queried.
   -->
-  <luceneMatchVersion>8.11.1</luceneMatchVersion>
 
   <!-- <lib/> directives can be used to instruct Solr to load any Jars
        identified and use them to resolve any "plugins" specified in
@@ -57,6 +56,8 @@
 
               <lib dir="./lib" />
     -->
+
+  <lib dir="/opt/solr/server/solr/lib/" regex="dynamic-facetting.*\.jar"/>
 
   <!-- A 'dir' option by itself adds any files found in the directory
        to the classpath, this is useful for including all jars in a
@@ -766,7 +767,6 @@
     -->
 
     <searchComponent name="addDynamicFacets" class="custom.AddDynamicFacetsSearchComponent" />
-    <searchComponent name="keyWordRedirect" class="custom.KeyWordRedirectSearchComponent" />
   
   <requestHandler name="/select" class="solr.SearchHandler">
     <!-- default values for query parameters can be specified, these
@@ -785,17 +785,8 @@
 
 <!-- adding multiple searchComponent at the beginning of the search-component list -->
      <arr name="first-components">
-         <str>keyWordRedirect</str>
-         <str>addDynamicFacets</str>
-
-       </arr>
-
-
-<!--      <arr name="dynamicFacets">
          <str>addDynamicFacets</str>
        </arr>
- -->
-
 
     <!-- In addition to defaults, "appends" params can be specified
          to identify values which should be appended to the list of
